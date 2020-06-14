@@ -56,7 +56,10 @@ class App extends React.Component {
   render(){
     return(
       <div className="App"> 
-      <h1> ToDoList</h1>
+      {/* <h1> <span className="heading">To Do List</span></h1>
+      <h1> <span className="heading">To Do List</span></h1> */}
+      <div className="container">
+        <h1> To Do List</h1>
       <form onSubmit={this.onFormSubmitHandler}>
           <input 
             type = "text" 
@@ -87,6 +90,7 @@ class App extends React.Component {
               );
             })}
           </ul>
+      </div>
       </div>
     )
   }
